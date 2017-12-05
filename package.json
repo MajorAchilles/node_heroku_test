@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node bundle.js",
-    "test": "node test.js"
+    "test": "node test.js",
+    "babel": "babel index.js --out-file bundle.js"
   },
   "dependencies": {
     "cookie-session": "^2.0.0-beta.3",
