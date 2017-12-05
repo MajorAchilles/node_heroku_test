@@ -1,10 +1,9 @@
-const express = require('express');
-const passport = require('passport');
-const FacebookStrategy = require('passport-facebook');
-const GoogleStrategy  = require('passport-google-oauth20');
+import express from 'express';
+import passport from 'passport';
+import FacebookStrategy from 'passport-facebook';
+import GoogleStrategy from 'passport-google-oauth20';
 // Import Facebook and Google OAuth apps configs
-const { facebook, google }  = require('./config');
-const { request } = require('http');
+import { facebook, google } from './config';
 
 // Transform Facebook profile because Facebook and Google profile objects look different
 // and we want to transform them into user objects that have the same set of attributes
